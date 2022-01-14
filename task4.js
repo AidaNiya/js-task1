@@ -1,10 +1,6 @@
-let souvenirWeight = Number(prompt("How many souvenirs do you want?"));
-let toyWeight = Number(prompt("How many toys do you want?"));
-alert(
-  "Total weight: " +
-    (souvenirWeight * 75 + toyWeight * 112) / 1000 +
-    " kg" +
-    "/" +
-    (souvenirWeight * 75 + toyWeight * 112) +
-    " gr"
-);
+const souvenirWeight = 75;
+const toyWeight = 112;
+let souvenirOrder = Number(prompt("How many souvenirs do you want?"));
+let toyOrder = Number(prompt("How many toys do you want?"));
+result = souvenirOrder * souvenirWeight + toyOrder * toyWeight;
+alert(result + " gr" + "/" + result / 1000 + " kg");
